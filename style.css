@@ -9,8 +9,9 @@
 
 .section {
   height: 115px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: lightcoral;
 }
 
 .category_button {
@@ -24,6 +25,7 @@
   flex-direction: row;
   width: 840px;
   height: 56px;
+  background-color: lightblue;
 }
 .logo {
   height: 115px;
