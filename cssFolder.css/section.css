@@ -1,0 +1,105 @@
+.section {
+  width: 840px;
+  height: 91px;
+  display: grid;
+  grid-template-rows: 56px 1fr;
+  position: absolute;
+  top: 28px;
+}
+
+.logo img {
+  max-width: 174px;
+  max-height: 41px;
+  width: auto;
+  height: auto;
+  margin-right: 20px;
+}
+
+.clearFix {
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: flex-start;
+}
+
+.icon-menus {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-menus a {
+  color: #888888;
+  display: flex;
+  font-size: 23px;
+}
+
+.my_coupang svg {
+  width: 27px;
+  height: 27px;
+  margin: 0 0 0 0;
+}
+
+.my_coupang a {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+.up-cart {
+  position: absolute;
+  left: 68px;
+  bottom: 6px;
+}
+
+.up-cart svg {
+  max-width: 37px;
+  width: auto;
+  height: 37px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.zero {
+  position: absolute;
+  color: white;
+  left: 24px;
+  top: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+.icon-title {
+  font-size: 12px;
+}
+
+.icon-title2 {
+  font-size: 12px;
+  width: 50px;
+}
+
+.somemore {
+  display: flex;
+  flex-direction: column;
+}
+
+.gnb-menu {
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  height: 32px;
+}
+
+.gnb-list {
+  font-size: 12px;
+  padding: 7px 14px 0px;
+}
+
+.gnb-menu li {
+  height: 25px;
+  color: #333;
+}

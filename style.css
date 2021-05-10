@@ -1,3 +1,11 @@
+@import url("./cssFolder.css/category_button.css");
+@import url("./cssFolder.css/section.css");
+@import url("./cssFolder.css/desc.css");
+@import url("./cssFolder.css/shippingmessage.css");
+@import url("./cssFolder.css/price.css");
+@import url("./cssFolder.css/searchBar.css");
+@import url("./cssFolder.css/breadcrumb.css");
+
 * {
   margin: 0px;
 }
@@ -14,7 +22,7 @@
 }
 
 .header {
-  width: 1012px;
+  width: 980px;
   height: 115px;
   padding: 0px 16px 0px 16px;
   display: flex;
@@ -24,121 +32,10 @@
   border-bottom: 1px solid #dddddd;
 }
 
-.section {
-  width: 840px;
-  height: 91px;
-  display: grid;
-  grid-template-rows: 56px 1fr;
-}
-
-ul {
-  list-style: none;
-}
-
-.logo img {
-  max-width: 174px;
-  max-height: 41px;
-  width: auto;
-  height: auto;
-  margin-right: 20px;
-}
-
-.search_bar input {
-  width: 487px;
-  height: 37px;
-  border: 2px solid #0073e9;
-  margin-right: 27px;
-}
-
-.clearFix {
-  display: flex;
-
-  justify-content: space-evenly;
-  justify-content: flex-start;
-}
-
-.gnb-menu {
-  padding: 0px;
-  display: flex;
-  justify-content: flex-start;
-}
-/* .top-bar {
-  height: 32px;
-  width: 100%;
-  background-color: #dddddd;
-} */
-
-.icon-menus {
-  display: flex;
-  padding: 0px;
-  justify-content: center;
-}
-
-.icon-menus a {
-  color: #888888;
-  display: flex;
-  font-size: 23px;
-}
-.icon-title {
-  font-size: 12px;
-}
-
-.somemore {
-  display: flex;
-  flex-direction: column;
-}
-
-.somemore :nth-child(1) {
-  margin-right: 18px;
-}
-
-.gnb-list {
-  font-size: 12px;
-  padding: 7px 14px 0px;
-}
-
-.category_button {
-  width: 110px;
-  height: 115px;
-  background-color: #0073e9;
-  position: absolute;
-  left: 0px;
-}
-
-.category_button img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .down-box {
   width: 980px;
   height: 815px;
   margin: auto;
-}
-
-.breadcrumb {
-  width: 980;
-  margin: auto;
-  padding-top: 20px;
-  padding-left: 0px;
-  display: flex;
-  height: 40px;
-  justify-content: flex-start;
-}
-
-.breadcrumb li {
-  font-size: 11px;
-  height: 27.78px;
-  margin-right: 10px;
-}
-
-.breadcrumb a {
-  text-decoration: none;
-  color: #212121;
-  margin-right: 6px;
 }
 
 .main-product {
@@ -157,6 +54,7 @@ ul {
 }
 .product-order {
   grid-area: box2;
+  z-index: 1;
 }
 
 .product-image-big img {
@@ -240,58 +138,10 @@ ul {
   display: flex;
 }
 
-.price {
-  padding: 17px 0px 17px 0px;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.origon-price {
-  position: relative;
-}
-
-.small-info {
-  display: inline-block;
-  position: absolute;
-}
-
-.small-small-info {
-  font-size: 9px;
-  color: #acacac;
-  display: flex;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  border: 1px solid #acacac;
-  justify-content: center;
-  align-items: center;
-}
-
 .discount-rate,
 .before-price {
   font-size: 14px;
   padding-right: 4px;
-}
-
-.before-price {
-  text-decoration: line-through;
-  color: #888;
-}
-
-strong {
-  font-size: 20px;
-  padding-right: 7px;
-}
-
-.price-unit {
-  font-size: 18px;
-}
-
-.major-price {
-  color: #ae0100;
-}
-
-.unit-price {
-  font-size: 12px;
 }
 
 .cash-badge {
@@ -322,74 +172,6 @@ strong {
   display: inline-block;
 }
 
-.shipping-fee {
-  padding: 14px 0px 3px 0px;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.shipping-fee-message {
-  font-size: 12px;
-}
-
-.shipping-fee-message-client {
-  font-weight: bold;
-  font-style: normal;
-}
-
-.shipping-fee-message-rocketfree {
-  font-weight: bold;
-  font-style: normal;
-  background-color: #008919;
-  border-radius: 1px;
-  padding: 2px 6px 1px;
-  height: 18px;
-  color: #ffffff;
-}
-
-.shipping-fee-message-arrivetime {
-  margin-top: 4px;
-}
-
-.shipping-fee-message-arrivetime span {
-  font-size: 12px;
-  letter-spacing: -0.75px;
-  margin-left: 3px;
-}
-
-.shipping-fee-message-green {
-  color: #008919;
-  letter-spacing: -0.75px;
-}
-
-.shipping-fee-message-green em {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: -0.75px;
-}
-
-.other-seller {
-  margin-bottom: 17px;
-  margin-top: 10px;
-}
-
-.other-seller a {
-  text-decoration: none;
-  color: #346aff;
-  letter-spacing: -0.75px;
-  font-size: 12px;
-  background-color: #fcfcfc;
-  padding: 2px 4px;
-  border: 1px solid #ddd;
-}
-
-.count-selected-menu {
-  height: 54px;
-  border: 1px solid #dddddd;
-  background-color: #fafafa;
-  margin-bottom: 17px;
-}
-
 .reward-cash {
   padding: 17px 0px;
   border-bottom: 1px solid #dddddd;
@@ -399,7 +181,7 @@ strong {
   height: 20px;
   padding-bottom: 17px;
   display: flex;
-  position: relative;
+  /* position: relative; */
   align-items: center;
 }
 

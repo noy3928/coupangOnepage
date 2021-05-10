@@ -19,24 +19,93 @@
     <div class="container">
       <div class="header">
         <div class="category_button">
-          <img src="./카테고리박스.png" alt="">
+          <i class="fas fa-bars"></i>
+          <span>카테고리</span>
+          <div class="shopping-list">
+            <ul class="shopping-list-one">
+              <li>패션의류/잡화<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>뷰티<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>출산/유아동<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>식품<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>주방용품<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>생활용품<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>홈인테리어<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>가전디지털<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>스포츠/레저<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>자동차용품<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>도서/음반/DVD<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>완구/취미<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>문구/오피스<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>반려동물용품<i class="fas fa-caret-right" id="caret"></i></li>
+              <li>헬스/건강식품<i class="fas fa-caret-right" id="caret"></i></li>
+            </ul>
+            <ul class="shopping-list-two">
+              <li>여행/티켓<i class="fas fa-caret-right" id="caret"></i></li>
+            </ul>
+            <ul class="shopping-list-three">
+              <li>테마관<i class="fas fa-caret-right" id="caret"></i></li>
+            </ul>
+          </div>
         </div>
+        
         <div class="section">
           <div class="clearFix">
             <div class="logo">
-              <img src="./coupangLogo.png" alt="coupanglogvoimage" />
+              <img src="./image/coupangLogo.png" alt="coupanglogvoimage" />
             </div>
             <div class="search_bar">
-              <input type="text" />
+              <div class="all-category" onclick="showAllCaterory()"> 
+                <span class="all">전체</span><i class="fas fa-caret-down" id="all-down"></i>
+              </div>
+              <div class="all-category-list">
+                <ul>
+                  <li>전체</li>
+                  <li>여성패션</li>
+                  <li>남성패션</li>
+                  <li>남녀 공용 의류</li>
+                  <li>유아동패션</li>
+                  <li>뷰티</li>
+                  <li>출산/유아동</li>
+                  <li>식품</li>
+                  <li>주방용품</li>
+                  <li>생활용품</li>
+                  <li>홈인테리어</li>
+                  <li>가전디지털</li>
+                  <li>스포츠/레저</li>
+                  <li>자동차용품</li>
+                  <li>도서/음반DVD</li>
+                  <li>완구/취미</li>
+                  <li>문구/오피스</li>
+                  <li>반려동물용품</li>
+                  <li>헬스/건강식품</li>
+                  <li>국내여행</li>
+                  <li>해외여행</li>
+                  <li>로켓설치</li>
+                  <li>공간별 집꾸미기</li>
+                  <li>쿠팡 Only</li>
+                  <li>싱글라이프</li>
+                  <li>오피스&사업자관</li>
+                  <li>결혼준비</li>
+                  <li>아트/공예</li>
+                  <li>여행용품</li>
+                  <li>미세먼지용품</li>
+                  <li>홈카페</li>
+                  <li>실버스토어</li>
+                </ul>
+              </div>
+              <input type="text" placeholder="찾고 싶은 상품을 검색해보세요!"/>
+              <div></div>
+              <div class="search-icon"> <img src="./image/search-icon.svg" alt="searchicon"></div>
             </div>
             <ul class="icon-menus">
               <li class="somemore my_coupang">
-                <a href=""><i class="far fa-user fa-lg"></i></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.16 56.84"><defs><style>.cls-1{fill:none;stroke:#555555;stroke-miterlimit:10;stroke-width:4px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle class="cls-1" cx="30.08" cy="14.86" r="13.36"/><path class="cls-1" d="M30.08,31.16A28.69,28.69,0,0,0,1.75,55.34H58.4A28.68,28.68,0,0,0,30.08,31.16Z"/></g></g></svg></a>
                 <span class="icon-title">마이쿠팡</span>
               </li>
-              <li class="somemore">
-                <a href=""><i class="fas fa-shopping-basket fa-lg"></i></a>
-                <span class="icon-title">장바구니</span>
+              <li class="somemore up-cart">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.27 77.1"><defs><style>.cls-1,.cls-2{fill:none;stroke:#555;stroke-miterlimit:10;stroke-width:4.5px;}.cls-1{stroke-linecap:round;}.cls-3{fill:#555;}.cls-4{fill:#4285f4;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M1.5,21.85H10a2.29,2.29,0,0,1,2.24,1.8l8.56,39H56.62"/><path class="cls-2" d="M18.34,51.58H53.72a2.84,2.84,0,0,0,2.61-1.69c1.67-3.81,4.65-13.18-3.2-19"/><line class="cls-2" x1="14.01" y1="31.88" x2="56.62" y2="31.88"/><circle class="cls-3" cx="22" cy="73.43" r="3.67"/><circle class="cls-3" cx="52.42" cy="73.43" r="3.67"/><circle class="cls-4" cx="59.41" cy="21.85" r="21.85"/></g></g></svg></a>
+                <span class="icon-title2">장바구니</span>
+                <span class="zero">0</span>
               </li>
             </ul>
           </div>
@@ -66,8 +135,8 @@
     </ul>
     <div class="main-product">
       <div class="product-image">
-        <div class="product-image-mini"><img src="./커피.jpeg" alt=""></div>
-        <div class="product-image-big"><img src="./커피.jpeg" alt=""></div>
+        <div class="product-image-mini"><img src="./image/커피.jpeg" alt=""></div>
+        <div class="product-image-big"><img src="./image/커피.jpeg" alt=""></div>
       </div>
       <div class="product-order">
         <div class="order-top-blank"></div>
@@ -94,7 +163,7 @@
           <strong>10,160<span class="price-unit">원</span></strong><span class="unit-price">(100ml당 406원)</span>
         </div>
         <div class="cash-badge">
-          <img src="./cash.png" alt=""><span>최대 102원 적립</span>
+          <img src="./image/cash.png" alt=""><span>최대 102원 적립</span>
         </div>
         </div>
         <div class="shipping-fee">
@@ -107,10 +176,39 @@
           <div class="other-seller">
             <a href="">다른 판매자 보기(16)</a>
           </div>
-          <div class="count-selected-menu"></div>
+          <div class="count-selected-menu" onclick="showSelectList()">
+            <div>
+            <span>개당 용량 x 총 수량 <br> <em>250ml x 10개</em> </span>
+            </div>
+            <div>
+          <i class="fas fa-caret-down"></i>
+            </div>
+            <ul class="count-selected-menu-downlist"  id="selected-count">
+              <li>
+                <p> <strong class="ml-count" >250ml x 10개</strong> <br> <span class="ml-price"> <strong class="selected-price"> 10,160원</strong>(100ml당 406원) </span> <br> <span class="arrive-time"> 내일(화)새벽 도착 보장 </span></p>
+              </li>
+              <li>
+                <p> <strong class="ml-count" >250ml x 10개</strong> <br> <span class="ml-price"> <strong class="selected-price"> 10,160원</strong>(100ml당 406원) </span> <br> <span class="arrive-time"> 내일(화)새벽 도착 보장 </span></p>
+              </li>
+              <li>
+                <p> <strong class="ml-count" >250ml x 10개</strong> <br> <span class="ml-price"> <strong class="selected-price"> 10,160원</strong>(100ml당 406원) </span> <br> <span class="arrive-time"> 내일(화)새벽 도착 보장 </span></p>
+              </li>
+              <li>
+                <p> <strong class="ml-count" >250ml x 10개</strong> <br> <span class="ml-price"> <strong class="selected-price"> 10,160원</strong>(100ml당 406원) </span> <br> <span class="arrive-time"> 내일(화)새벽 도착 보장 </span></p>
+              </li>
+              <li>
+                <p> <strong class="ml-count" >250ml x 10개</strong> <br> <span class="ml-price"> <strong class="selected-price"> 10,160원</strong>(100ml당 406원) </span> <br> <span class="arrive-time"> 내일(화)새벽 도착 보장 </span></p>
+              </li>
+              <li>
+                <p> <strong class="ml-count" >250ml x 10개</strong> <br> <span class="ml-price"> <strong class="selected-price"> 10,160원</strong>(100ml당 406원) </span> <br> <span class="arrive-time"> 내일(화)새벽 도착 보장 </span></p>
+              </li>
+                
+            </ul>
+          </div>
+          
         </div>
         <div class="reward-cash">
-          <div class="cash-summary"><img src="./cash2.png" alt=""><span class="캐시적립혜택">캐시적립 혜택</span><div class="small-small-info second"><i class="fas fa-info"></i></div><span class="stick">|</span><span>최대 102원 적립</span></div>
+          <div class="cash-summary"><img src="./image/cash2.png" alt=""><span class="캐시적립혜택">캐시적립 혜택</span><div class="small-small-info second"><i class="fas fa-info"></i></div><span class="stick">|</span><span>최대 102원 적립</span></div>
           <div class="cupay">
             <p>쿠페이 머니 결제 시 1% 적립</p>
             <button>쿠페이 머니 충전하기</button>
@@ -121,6 +219,14 @@
           <button class="cart">장바구니 담기</button>
           <button class="buy">바로구매 ></button>
         </div>
+        <ul class="description">
+          <li>원산지: 상품 상세설명 참조</li>
+          <li>유통기한: 2021-06-04 이후인 상품</li>
+          <li>개당 중량: 250g</li>
+          <li>열량: 158Kcal</li>
+          <li>용기 타입: 플라스틱병</li>
+          <li>쿠팡상품번호: 24677757 - 95983620</li>
+        </ul>
       </div>
     </div>
   </div>
