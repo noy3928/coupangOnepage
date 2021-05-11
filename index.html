@@ -12,11 +12,28 @@
       href="http://image9.coupangcdn.com/image/coupang/favicon/v2/favicon.ico"
     />
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-    <script src="app.js"></script>
+    
   </head>
   <body>
-    <div class="top-bar"></div>
+    <div class="top-bar">
+    </div>
     <div class="container">
+      <div class="main-topbar">
+      <div class="left-top">
+        <ul>
+        <li>즐겨찾기</li>
+        <li>입점신청&nbsp<i class="fas fa-caret-down" id="topbar-down-icon"></i></li>
+      </ul>
+      </div>
+      <div class="right-top">
+        <ul>
+        <li class="disappear"> <img src="./image/bi.png" alt=""> 배송비가 사라진다 &nbsp<i class="fas fa-caret-down" id="topbar-down-icon"></i></li>
+        <li>로그인</li>
+        <li>회원가입</li>
+        <li>고객센터</li>
+      </ul>
+      </div>
+    </div>
       <div class="header">
         <div class="category_button">
           <i class="fas fa-bars"></i>
@@ -111,20 +128,18 @@
           </div>
 
           <ul class="gnb-menu">
-            <li class="gnb-list">로켓배송</li>
-            <li class="gnb-list">로켓프레시</li>
-            <li class="gnb-list">가정의 달</li>
-            <li class="gnb-list">로켓직구</li>
-            <li class="gnb-list">골드박스</li>
-            <li class="gnb-list">정기배송</li>
-            <li class="gnb-list">이벤트/쿠폰</li>
-            <li class="gnb-list">기획전</li>
-            <li class="gnb-list">여행/티켓</li>
+            <li class="gnb-list"> <a href=""> 로켓배송</a></li>
+            <li class="gnb-list"><a href=""> 로켓프레시 </a></li>
+            <li class="gnb-list"> <a href=""> 가정의 달</a></li>
+            <li class="gnb-list"> <a href=""> 로켓직구</a></li>
+            <li class="gnb-list"> <a href=""> 골드박스</a></li>
+            <li class="gnb-list"> <a href=""> 정기배송</a></li>
+            <li class="gnb-list"> <a href=""> 이벤트/쿠폰</a></li>
+            <li class="gnb-list"> <a href=""> 기획전</a></li>
+            <li class="gnb-list"> <a href=""> 여행/티켓</a></li>
           </ul>
         </div>
       </div>
-      <!-- <div class="top-bar"></div>
-    </div> -->
     <div class="down-box">
     <ul class="breadcrumb">
       <li><a href="">쿠팡 홈</a>></li>
@@ -160,7 +175,7 @@
             <div class="small-info"><div class="small-small-info"><i class="fas fa-info"></i></div></div>
           </div>
           <div class="major-price">
-          <strong>10,160<span class="price-unit">원</span></strong><span class="unit-price">(100ml당 406원)</span>
+          <strong> <span class="major-price-time"> 10,160 </span><span class="price-unit">원</span></strong><span class="unit-price">(100ml당 406원)&nbsp</span><img src="./image/로켓와우.png" alt="" class="roket-wow">
         </div>
         <div class="cash-badge">
           <img src="./image/cash.png" alt=""><span>최대 102원 적립</span>
@@ -208,14 +223,18 @@
           
         </div>
         <div class="reward-cash">
-          <div class="cash-summary"><img src="./image/cash2.png" alt=""><span class="캐시적립혜택">캐시적립 혜택</span><div class="small-small-info second"><i class="fas fa-info"></i></div><span class="stick">|</span><span>최대 102원 적립</span></div>
+          <div class="cash-summary"><img src="./image/cash2.png" alt=""><span class="캐시적립혜택">캐시적립 혜택</span><div class="small-small-info second"><i class="fas fa-info"></i></div><span class="stick">|</span><span>최대 <span class="time-reward">102</span>원 적립</span></div>
           <div class="cupay">
             <p>쿠페이 머니 결제 시 1% 적립</p>
             <button>쿠페이 머니 충전하기</button>
           </div>
         </div>
         <div class="buy-cart">
-          <input type="number" name="" id="">
+          <div class="count-buy">
+            <input type="text" id="buy-count" value="1">
+            <div class="plus" onclick="addCount()"><img src="./image/Asset 5.svg" alt=""></div>
+            <div class="minus" onclick="subCount()"><img src="./image/Asset 4.svg" alt=""></div>
+          </div>
           <button class="cart">장바구니 담기</button>
           <button class="buy">바로구매 ></button>
         </div>
@@ -230,5 +249,35 @@
       </div>
     </div>
   </div>
+  <div class="people-also-bought">
+    <div class="also-header">
+    <h2>다른 고객이 함께 구매한 상품</h2>
+  </div>
+  <div class="other-product">
+    <ul class="horizon-scroll" onmouseover="showArrow()" onmouseout="hideArrow()">
+      <li class="other-product1"><a href="#"> <img src="./image/product1.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+      <li class="other-product1"><a href="#"> <img src="./image/product2.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+      <li class="other-product1"><a href="#"> <img src="./image/product3.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+      <li class="other-product1"><a href="#"> <img src="./image/product4.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+      <li class="other-product1"><a href="#"> <img src="./image/product5.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+      <li class="other-product1"><a href="#"> <img src="./image/product6.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+      <li class="other-product1"><a href="#"> <img src="./image/product1.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+      <li class="other-product1"><a href="#"> <img src="./image/product2.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+      <li class="other-product1"><a href="#"> <img src="./image/product3.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+      <li class="other-product1"><a href="#"> <img src="./image/product4.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+      <li class="other-product1"><a href="#"> <img src="./image/product5.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+      <li class="other-product1"><a href="#"> <img src="./image/product6.jpeg" alt=""> <p>프렌치카페 로스터리 옐로우 <br> 비번 돌체 라떼, 250ml,10개</p> <span class="other-product-price"> <em> 10,120</em> 원</span> <br> <span class="other-product-per-price">(100ml당 405원)</span>  </a></li>
+    </ul>
+    <div class="left-arrow">
+      <img src="./image/Asset 9.svg" alt="" class="left-before-arrow">
+      <img src="./image/Asset 8.svg" alt="" class="left-after-arrow" onclick="scrollLeft()" >
+    </div>
+
+    <div class="right-arrow" onmouseover="showRightBlue(); showArrow()" onmouseout="hideRightBlue()">
+      <img src="./image/Asset 6.svg" alt="" class="before-arrow">
+      <img src="./image/Asset 7.svg" alt="" class="after-arrow" onclick="horizonScroll() ">
+    </div>
+  </div>
+  <script src="app.js"></script>
   </body>
 </html>

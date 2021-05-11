@@ -91,7 +91,6 @@ ul {
   padding: 0px;
   display: flex;
   justify-content: flex-start;
-  height: 32px;
 }
 
 .gnb-list {
@@ -99,7 +98,35 @@ ul {
   padding: 7px 14px 0px;
 }
 
-.gnb-menu li {
+.new-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.green-roket {
+  width: 15px;
+  height: 15px;
+}
+
+.gnb-list li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.gnb-list a {
   height: 25px;
+  text-decoration: none;
   color: #333;
+
+  height: 32px;
+}
+
+.blue-roket {
+  width: 15px;
+  height: 15px;
+}
+
+.gnb-list a:hover {
+  color: #4385f4;
+  text-decoration: underline;
 }
