@@ -139,6 +139,7 @@
 .left-after-arrow {
   width: 23px;
   height: 23px;
+  visibility: hidden;
 }
 
 /* .horizon-scroll:hover .left-arrow {

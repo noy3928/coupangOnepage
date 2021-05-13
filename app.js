@@ -3,6 +3,15 @@
 let selectedHide = true;
 let categoryHide = true;
 let scrollChange = false;
+let target = document.querySelector(".horizon-scroll");
+let listPosition = document.querySelector(".other-product1");
+
+window.onload = function () {
+  console.log(listPosition.getBoundingClientRect().left);
+  console.log(listPosition.getBoundingClientRect().right);
+  console.log(listPosition.getBoundingClientRect().top);
+  console.log(listPosition.getBoundingClientRect().bottom);
+};
 
 function showSelectList() {
   let selectedDownMenu = document.querySelector(
@@ -70,20 +79,23 @@ function subCount() {
   console.log(String(102 * num));
 
   if (num < 1) {
+    num = 1;
     alert("0이하는 안돼요");
     document.getElementById("buy-count").value = 1;
     document.querySelector(".major-price-time").textContent = "10,160";
     document.querySelector(".before-price").textContent = "10,760";
+    document.querySelector(".time-reward").textContent = "102";
   }
 }
 
 // 오른쪽 화살
 
-function showArrow() {
+function arrowShow() {
   document.querySelector(".right-arrow").style.visibility = "visible";
-  // if (scrollChange == true) {
-  //   document.querySelector(".left-arrow").style.visibility = "visible";
-  // }
+  if (scrollChange == true) {
+    document.querySelector(".left-arrow").style.visibility = "visible";
+    document.querySelector(".left-arrow").style.visibility = "visible";
+  }
 }
 
 function hideArrow() {
@@ -102,17 +114,40 @@ function hideRightBlue() {
 
 //
 
-function horizonScroll() {
-  let target = document.querySelector(".horizon-scroll");
+function Rightscroll() {
+  // target.style.transform = "translateX(-100px)";
   let horizonScroll = target.animate(
-    [{ transform: "translateX(0)" }, { transform: "translateX(-700px)" }],
+    [{ transform: "translateX(0)" }, { transform: "translateX(-500px)" }],
     500
   );
 
   horizonScroll.addEventListener("finish", function () {
-    target.style.transform = "translateX(-700px)";
+    target.style.transform = "translateX(-500px)";
   });
 
-  console.log(target.getBoundingClientRect().right);
+  console.log(listPosition.getBoundingClientRect().left);
+  console.log(listPosition.getBoundingClientRect().right);
+  console.log(listPosition.getBoundingClientRect().top);
+  console.log(listPosition.getBoundingClientRect().bottom);
+  console.log("---");
+  scrollChange = true;
+}
+
+function leftScroll() {
+  // target.style.transform = "translateX(100px)";
+  let horizonScroll = target.animate(
+    [{ transform: "translateX(0)" }, { transform: "translateX(+500px)" }],
+    500
+  );
+
+  horizonScroll.addEventListener("finish", function () {
+    target.style.transform = "translateX(+500px)";
+  });
+
+  console.log(listPosition.getBoundingClientRect().left);
+  console.log(listPosition.getBoundingClientRect().right);
+  console.log(listPosition.getBoundingClientRect().top);
+  console.log(listPosition.getBoundingClientRect().bottom);
+  console.log("--");
   scrollChange = true;
 }
